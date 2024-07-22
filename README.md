@@ -5,8 +5,9 @@ Thanks to SwordGrayFire for announcer voice
 
 ![image](https://github.com/user-attachments/assets/4efc451d-81a9-4c2f-a074-e89aa476e090)![image](https://github.com/user-attachments/assets/1198cbd6-1b49-4fc4-b0eb-9fd757281fd4)
 
-
 https://github.com/user-attachments/assets/78ba987b-a65c-4333-9be1-336b3c361cfc
+
+![attachment (4) (1)](https://github.com/user-attachments/assets/b9e3ea90-f08d-48e8-bedf-837a2ac2bda5)
 
 
 # Other Mods
