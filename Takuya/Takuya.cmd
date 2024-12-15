@@ -588,7 +588,7 @@ flag3=nostandguard
 ;[State -1, Soft Fast Fall]
 ;type = VelSet
 ;triggerall = statetype = A && movetype != H
-;triggerall = stateno != [900,910] && stateno != 390 && stateno != [620,651] && stateno != [700,705] ;Moves that have been nerfed to not allow fastfall during them
+;triggerall = stateno != [900,910] && stateno != 390 && stateno != [620,651] && stateno != [700,705] && stateno != 615 && stateno != [21000,21010] ;Moves that have been nerfed to not allow fastfall during them
 ;triggerall = command = "down" 
 ;triggerall = (vel y > 0 && vel y < 6) || stateno = 66 || stateno = 105
 ;trigger1 = 1
@@ -678,7 +678,7 @@ trigger1 = ctrl
 [State -1, Run Fwd]
 type = ChangeState
 value = 100
-trigger1 = command = "FF" || (command = "z" && command != "holddown")
+trigger1 = command = "FF" 
 trigger1 = statetype = S
 trigger1 = ctrl
 
@@ -704,7 +704,6 @@ trigger1 = ctrl
 ;===========================================================================
 ;---------------------------Basics-----------------------------------------
 ;---------------------------------------------------------------------------
-; Air Dash - Forward
 ; Wavedash
 ;[State -1, Wavedash]
 ;type = ChangeState
@@ -712,14 +711,13 @@ trigger1 = ctrl
 ;trigger1 = command = "WD" && command != "NotWD"
 ;trigger1 = statetype = C || statetype = S
 ;trigger1 = ctrl
-
 ;---------------------------------------------------------------------------
 ; Run Fwd
 [State -1, Run Fwd]
 type = ChangeState
 value = 100
 triggerall = stateno != 100
-trigger1 = command = "FF" || (command = "z" && command != "holddown")
+trigger1 = command = "FF" 
 trigger1 = statetype = S
 trigger1 = ctrl
 ;---------------------------------------------------------------------------
@@ -762,7 +760,7 @@ triggerall = stateno != 65
 triggerall = stateno != 70
 value = ifelse(pos y >= 0,52,65)
 triggerall = Statetype = A
-trigger1 = command = "FF" || command = "z"
+trigger1 = command = "FF"
 trigger1 = ctrl
 ;---------------------------------------------------------------------------
 ; Air Dash - Backwards
@@ -1000,7 +998,7 @@ trigger1 = ctrl
 type = ChangeState
 value = 670
 triggerall = numhelper(3500) = 0
-Triggerall = power >= 500
+Triggerall = power >= 200
 triggerall = command = "holddown"
 triggerall = command = "c"
 Triggerall = statetype = A
